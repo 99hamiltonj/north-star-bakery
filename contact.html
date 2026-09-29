@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>North Star Bakery | Contact</title>
+</head>
+<body>
+    <header>
+        <h1>North Star Bakery</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Contact Us</h2>
+        <section>
+            <h3>General Inquiry</h3>
+            <form>
+                <label for="Inquiry-Name">Name:</label>
+                <input type="text" id="inquiry-name" name="inquiryName" required>
+
+                <label for="inquiry-email">Email:</label>
+                <input type="email" id="inquiry-email" name="inquiryEmail" required>
+
+                <label for="inquiry-message">Question</label>
+                <textarea id="inquiry-message" name="inquiryMessage" rows="4" required></textarea>
+
+                <button type="submit">Send Inquiry</button>
+            </form>
+        </section>
+        
+        <section>
+            <h3>Pre-Order Request</h3>
+            <form>
+                <label for="order-name">Order Name:</label>
+                <input type="text" id="order-name" name="OrderName" required>
+
+                <label for="order-email">Order Email:</label>
+                <input type="email" id="order-email" name="orderEmail" required>
+                
+                <label for="pickup-date">Pickup Date</label>
+                <input type="date" id="date" name="pickupDate" required>
+
+                <label for="order-product">Product</label>
+                <select id="order-product" name="orderProdct" required>
+                    <option value="Sourdough">Sourdough Bread</option>
+                    <option value="Cookies">Chocolate Chip Cookies</option>
+                    <option value="Cake">Custom Cake</option>
+                    <option value="Rolls">Cinnamon Rolls</option>
+                </select>
+
+                <label for="order-qty">Quantity</label>
+                <input type="number" id="order-qty" name="orderQty" min="1" value="1" required>
+
+                <label for="allergy-notes">Allergy Notes</label>
+                
+                <textarea id="allergy-notes" name="allergyNotes" rows="4"></textarea>
+                <button type="submit">Submit Pre-Order</button>
+            </form>
+        </section>
+
+        <section>
+            <h3>Location Information</h3>
+            <p>1373 Main St, Coventry, RI 02816</p>
+            <p>We are located right across the street from the Job Lot ample parking infront and seating inside for our valued customers.</p>
+        </section>
+        <section>
+            <h3>Hours of Operation</h3>
+            <ul>
+                <li>Sunday: 10am-5pm</li>
+                <li>Monday: 8am-7pm</li>
+                <li>Tuesday: 8am=7pm</li>
+                <li>Wednesday: 8am-7pm</li>
+                <li>Thursday: 8am-7pm</li>
+                <li>Friday: 8am-7pm</li>
+                <li>Saturday: CLOSED</li>
+            </ul>            
+        </section>
+    </main>
+
+    <footer>
+        <p>2026 North Start Bakery</p>
+        <p>Open Daily Sunday-Friday</p>
+        <p>Delivering Fresh Baked goods for generations</p>
+    </footer>
+</body>
+</html>

@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>North Star Bakery | Contact</title>
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
     <header>
@@ -26,7 +27,8 @@
         <h2>Contact Us</h2>
         <section>
             <h3>General Inquiry</h3>
-            <form>
+            <fieldset>
+                <legend>Your Information</legend>
                 <label for="Inquiry-Name">Name:</label>
                 <input type="text" id="inquiry-name" name="inquiryName" required>
 
@@ -37,18 +39,20 @@
                 <textarea id="inquiry-message" name="inquiryMessage" rows="4" required></textarea>
 
                 <button type="submit">Send Inquiry</button>
-            </form>
+            </fieldset>
         </section>
         
         <section>
             <h3>Pre-Order Request</h3>
-            <form>
+            <fieldset>
+                <legend>Your Information</legend>
                 <label for="order-name">Order Name:</label>
                 <input type="text" id="order-name" name="OrderName" required>
 
                 <label for="order-email">Order Email:</label>
                 <input type="email" id="order-email" name="orderEmail" required>
                 
+                <legend>Order Details</legend>
                 <label for="pickup-date">Pickup Date</label>
                 <input type="date" id="date" name="pickupDate" required>
 
@@ -67,7 +71,7 @@
 
                 <textarea id="allergy-notes" name="allergyNotes" rows="4"></textarea>
                 <button type="submit">Submit Pre-Order</button>
-            </form>
+            </fieldset>
         </section>
 
         <section>

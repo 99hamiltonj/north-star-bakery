@@ -44,41 +44,47 @@
         </section>
         
         <section>
-            <h3>Pre-Order Request</h3>
-            <fieldset>
-                <legend>Your Information</legend>
-                <label for="order-name">Order Name:</label>
-                <input type="text" id="order-name" name="orderName" required>
+    <h3>Pre-Order Request</h3>
+    <form id="preorder-form" novalidate>
+        <fieldset>
+            <legend>Your Information</legend>
+            <label for="order-name">Order Name:</label>
+            <input type="text" id="order-name" name="orderName" required>
+            <p class="error" id="name-error"></p>
 
-                <label for="order-email">Order Email:</label>
-                <input type="email" id="order-email" name="orderEmail" required>
-            </fieldset>
-            <fieldset>    
-                <legend>Order Details</legend>
-                <label for="pickup-date">Pickup Date</label>
-                <input type="date" id="pickup-date" name="pickupDate" required>
+            <label for="order-email">Order Email:</label>
+            <input type="email" id="order-email" name="orderEmail" required>
+            <p class="error" id="email-error"></p>
+        </fieldset>
 
-                <label for="order-product">Product</label>
-                <select id="order-product" name="orderProduct" required>
-                    <option value="Sourdough">Sourdough Bread</option>
-                    <option value="Cookies">Chocolate Chip Cookies</option>
-                    <option value="Cake">Custom Cake</option>
-                    <option value="Rolls">Cinnamon Rolls</option>
-                </select>
+        <fieldset>
+            <legend>Order Details</legend>
+            <label for="pickup-date">Pickup Date:</label>
+            <input type="date" id="pickup-date" name="pickupDate" required>
 
-                <label for="order-qty">Quantity</label>
-                <input type="number" id="order-qty" name="orderQty" min="1" value="1" required>
+            <label for="order-product">Product:</label>
+            <select id="order-product" name="orderProduct" required>
+                <option value="Sourdough">Sourdough Bread</option>
+                <option value="Cookies">Chocolate Chip Cookies</option>
+                <option value="Cake">Custom Cake</option>
+                <option value="Rolls">Cinnamon Rolls</option>
+            </select>
 
-                <label for="allergy-notes">Allergy Notes</label>
+            <label for="order-qty">Quantity:</label>
+            <input type="number" id="order-qty" name="orderQty" min="1" value="1" required>
+            <p class="error" id="qty-error"></p>
 
-                <textarea id="allergy-notes" name="allergyNotes" rows="4"></textarea>
-                <button type="submit">Submit Pre-Order</button>
-                <button type="button" id="save-favorite">Save as Favorite</button>
+            <label for="allergy-notes">Allergy Notes:</label>
+            <textarea id="allergy-notes" name="allergyNotes" rows="4"></textarea>
+        </fieldset>
 
-                <h4>My Favorite Orders</h4>
-                <ul id="favorites-list"></ul>
-            </fieldset>
-        </section>
+        <button type="submit">Submit Pre-Order</button>
+        <button type="button" id="save-favorite">Save as Favorite</button>
+    </form>
+
+    <h4>My Favorite Orders</h4>
+    <ul id="favorites-list"></ul>
+</section>
 
         <section>
             <h3>Location Information</h3>

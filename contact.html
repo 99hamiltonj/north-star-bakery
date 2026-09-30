@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>North Star Bakery | Contact</title>
     <link rel="stylesheet" href="css/styles.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
     <header>
@@ -47,17 +48,18 @@
             <fieldset>
                 <legend>Your Information</legend>
                 <label for="order-name">Order Name:</label>
-                <input type="text" id="order-name" name="OrderName" required>
+                <input type="text" id="order-name" name="orderName" required>
 
                 <label for="order-email">Order Email:</label>
                 <input type="email" id="order-email" name="orderEmail" required>
-                
+            </fieldset>
+            <fieldset>    
                 <legend>Order Details</legend>
                 <label for="pickup-date">Pickup Date</label>
-                <input type="date" id="date" name="pickupDate" required>
+                <input type="date" id="pickup-date" name="pickupDate" required>
 
                 <label for="order-product">Product</label>
-                <select id="order-product" name="orderProdct" required>
+                <select id="order-product" name="orderProduct" required>
                     <option value="Sourdough">Sourdough Bread</option>
                     <option value="Cookies">Chocolate Chip Cookies</option>
                     <option value="Cake">Custom Cake</option>
@@ -71,6 +73,10 @@
 
                 <textarea id="allergy-notes" name="allergyNotes" rows="4"></textarea>
                 <button type="submit">Submit Pre-Order</button>
+                <button type="button" id="save-favorite">Save as Favorite</button>
+
+                <h4>My Favorite Orders</h4>
+                <ul id="favorites-list"></ul>
             </fieldset>
         </section>
 
